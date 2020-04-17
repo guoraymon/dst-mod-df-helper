@@ -34,5 +34,18 @@ end
 
 configuration_options = {
     AddOption("quick_pick", "快速采集", "快速采集植物"),
-    AddOption("quick_drop", "快速丢弃", "快速丢弃物品")
+    AddOption("quick_drop", "快速丢弃", "快速丢弃物品"),
+    {
+        name = "drop_stack",
+        label = "掉落堆叠范围",
+        hover = "设置掉落物自动堆叠范围或关闭",
+        options =
+        {
+			{ description = "关闭", data = 0 },
+			{ description = "10", data = 10, hover = "默认" },
+			{ description = "20", data = 20 },
+			{ description = "30", data = 30 },
+        },
+        default = 10,
+    }
 }

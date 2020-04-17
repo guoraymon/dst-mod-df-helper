@@ -7,3 +7,8 @@ end
 if GetModConfigData("quick_drop") == true then
     modimport("scripts/quick_drop.lua")
 end
+
+-- 掉落堆叠
+if GetModConfigData("drop_stack") > 0 then
+    modimport("scripts/drop_stack.lua")
+end
