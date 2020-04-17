@@ -47,5 +47,22 @@ configuration_options = {
 			{ description = "30", data = 30 },
         },
         default = 10,
+    },
+    {
+        name = "stack_size",
+        label = "物品堆叠数量",
+        hover = "设置物品堆叠数量",
+        options =
+        {
+			{ description = "关闭", data = 0 },
+			{ description = "40", data = 40 },
+			{ description = "63", data = 63 },
+			{ description = "99", data = 99, hover = "默认，两位数堆叠上限" },
+			{ description = "127", data = 127 },
+			{ description = "255", data = 255 },
+			{ description = "500", data = 500 },
+			{ description = "999", data = 999 },
+        },
+        default = 99,
     }
 }
