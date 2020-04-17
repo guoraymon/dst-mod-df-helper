@@ -15,5 +15,5 @@ end
 
 -- 物品堆叠数量
 if GetModConfigData("stack_size") > 0 then
-    modimport("scripts/drop_stack.lua")
+    modimport("scripts/stack_size.lua")
 end
