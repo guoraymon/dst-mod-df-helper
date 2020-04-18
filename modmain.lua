@@ -8,9 +8,9 @@ if GetModConfigData("quick_harvest") == true then
     modimport("scripts/quick_harvest.lua")
 end
 
--- 快速丢弃
-if GetModConfigData("quick_drop") == true then
-    modimport("scripts/quick_drop.lua")
+-- 快捷丢弃
+if GetModConfigData("shortcut_drop") == true then
+    modimport("scripts/shortcut_drop.lua")
 end
 
 -- 掉落堆叠范围

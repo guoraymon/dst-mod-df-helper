@@ -35,7 +35,7 @@ end
 configuration_options = {
     AddOption("quick_pick", "快速采集", "快速采集植物"),
     AddOption("quick_harvest", "快速收获", "迅速收获锅和农场作物"),
-    AddOption("quick_drop", "快速丢弃", "快速丢弃物品"),
+    AddOption("shortcut_drop", "快捷丢弃", "快速丢弃物品"),
     {
         name = "drop_stack",
         label = "掉落堆叠范围",
