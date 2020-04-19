@@ -1,3 +1,8 @@
+-- 死亡不掉落
+if GetModConfigData("dont_drop") == true then
+    modimport("scripts/dont_drop.lua")
+end
+
 -- 快速采集
 if GetModConfigData("quick_pick") == true then
     modimport("scripts/quick_pick.lua")
@@ -31,4 +36,14 @@ end
 -- 物品堆叠数量
 if GetModConfigData("stack_size") > 0 then
     modimport("scripts/stack_size.lua")
+end
+
+-- 帐篷耐久
+if GetModConfigData("tent_uses") > 0 then
+    TUNING.TENT_USES = GetModConfigData("tent_uses")
+end
+
+-- 木棚耐久
+if GetModConfigData("siesta_canopy_uses") > 0 then
+    TUNING.SIESTA_CANOPY_USES = GetModConfigData("siesta_canopy_uses")
 end

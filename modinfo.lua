@@ -1,7 +1,7 @@
 name = "稻花助手(dev)"
 description = ""
 author = "颠三倒四"
-version = "1.0.1"
+version = "1.0.2"
 
 priority = 0
 
@@ -33,6 +33,7 @@ local function AddOption(name, label, hover, options, default_setting)
 end
 
 configuration_options = {
+    AddOption("dont_drop", "死亡不掉落", "死亡不掉落"),
     AddOption("quick_pick", "快速采集", "快速采集植物"),
     AddOption("quick_harvest", "快速收获", "迅速收获锅和农场作物"),
     AddOption("shortcut_drop", "快捷丢弃", "快速丢弃物品"),
@@ -66,6 +67,38 @@ configuration_options = {
 			{ description = "500", data = 500 },
 			{ description = "999", data = 999 },
         },
-        default = 99,
+        default = 99
+    },
+    {
+        name = "tent_uses",
+        label = "帐篷耐久",
+        hover = "改帐篷耐久",
+        options =
+        {
+            {description = "关闭", data = 6 },
+			{ description = "10", data = 10 },
+			{ description = "50", data = 50 },
+            {description = "100", data = 100 },
+            {description = "200", data = 200 },
+            {description = "500", data = 500 },
+            {description = "9999", data = 9999, hover = "默认" },
+        },
+        default = 9999
+    },
+    {
+        name = "siesta_canopy_uses",
+        label = "木棚耐久",
+        hover = "改木棚耐久",
+        options =
+        {
+            {description = "关闭", data = 6 },
+			{ description = "10", data = 10 },
+			{ description = "50", data = 50 },
+            {description = "100", data = 100 },
+            {description = "200", data = 200 },
+            {description = "500", data = 500 },
+            {description = "9999", data = 9999, hover = "默认" },
+        },
+        default = 9999
     }
 }
