@@ -38,6 +38,11 @@ if GetModConfigData("stack_size") > 0 then
     modimport("scripts/stack_size.lua")
 end
 
+-- 热能石无限耐久
+if GetModConfigData("heatrock_infinite") == true then
+    modimport("scripts/heatrock_infinite.lua")
+end
+
 -- 帐篷耐久
 if GetModConfigData("tent_uses") > 0 then
     TUNING.TENT_USES = GetModConfigData("tent_uses")

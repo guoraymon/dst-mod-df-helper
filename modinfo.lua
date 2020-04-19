@@ -69,6 +69,8 @@ configuration_options = {
         },
         default = 99
     },
+
+    AddOption("heatrock_infinite", "热能石无限耐久", "热能石无限耐久"),
     {
         name = "tent_uses",
         label = "帐篷耐久",
