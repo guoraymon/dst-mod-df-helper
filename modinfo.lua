@@ -34,6 +34,8 @@ end
 
 configuration_options = {
     AddOption("dont_drop", "死亡不掉落", "死亡不掉落"),
+    AddOption("extra_equip_slots", "额外装备槽", "额外装备槽"),
+    AddOption("trash_destroy", "二本垃圾桶", "二本垃圾桶"),
     AddOption("quick_pick", "快速采集", "快速采集植物"),
     AddOption("quick_harvest", "快速收获", "迅速收获锅和农场作物"),
     AddOption("shortcut_drop", "快捷丢弃", "快速丢弃物品"),

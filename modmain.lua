@@ -3,6 +3,16 @@ if GetModConfigData("dont_drop") == true then
     modimport("scripts/dont_drop.lua")
 end
 
+-- 额外装备槽
+if GetModConfigData("extra_equip_slots") == true then
+    modimport("modules/extra_equip_slots/main.lua")
+end
+
+-- 二本垃圾桶
+if GetModConfigData("trash_destroy") == true then
+    modimport("scripts/trash_destroy.lua")
+end
+
 -- 快速采集
 if GetModConfigData("quick_pick") == true then
     modimport("scripts/quick_pick.lua")
