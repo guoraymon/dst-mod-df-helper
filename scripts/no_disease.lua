@@ -3,8 +3,10 @@ local modmastersim = GLOBAL.TheNet:GetIsMasterSimulation()
 local SpawnPrefab = GLOBAL.SpawnPrefab
 local TUNING = GLOBAL.TUNING
 
--- no more grass morphing
-TUNING.GRASSGEKKO_MORPH_CHANCE = 0
+-- no more disease appearing
+TUNING.DISEASE_CHANCE = 0
+TUNING.DISEASE_DELAY_TIME = 0
+TUNING.DISEASE_DELAY_TIME_VARIANCE = 0
 
 if modmastersim then
 	-- cure stuff if there is something diseased
